@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const MyHomePage(title: 'Flutter Calculator'),
     );
@@ -29,14 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-
-      _counter++;
-    });
-  }
+  double sizeBotao = 125;
 
   @override
   Widget build(BuildContext context) {
@@ -44,21 +37,194 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(
-        child: Column(children: [
+      body: Column(
+        children: [          
+          Row(
+            children: const [
+              
+            ],
+          ),
           Row(
             children: [
-              Container(
-                child: SizedBox(
-                  width: 70,
-                  height: 70,
-                  child: ,
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("AC", textScaleFactor: 2,),
                 ),
-              )
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("( )", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("%", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("/", textScaleFactor: 2,),
+                ),
+              ),
             ],
-          )
-        ]),
-      ),
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("7", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("8", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("9", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("x", textScaleFactor: 2,),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("4", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("5", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("6", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("-", textScaleFactor: 2,),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("1", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("2", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("3", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("+", textScaleFactor: 2,),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("0", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text(",", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("3", textScaleFactor: 2,),
+                ),
+              ),
+              SizedBox(
+                width: sizeBotao,
+                height: sizeBotao,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("=", textScaleFactor: 2,),
+                ),
+              ),
+            ],
+          ),
+      ]),
     );
   }
 }
