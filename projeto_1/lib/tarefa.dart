@@ -1,11 +1,10 @@
 class Tarefa {
 
-  int index;
   String nome;
   late DateTime data;
   late bool concluida;
 
-  Tarefa(this.nome, this.index) {
+  Tarefa(this.nome, ) {
     concluida = false;
     data = DateTime.now();
   }

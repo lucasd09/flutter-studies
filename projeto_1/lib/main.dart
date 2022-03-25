@@ -28,10 +28,8 @@ class ListaScreenState extends State<ListaScreen> {
   TextEditingController controller = TextEditingController();
 
   void adicionaTarefa(String nome) {
-    int index = 1;
     setState(() {
-      tarefas.add(Tarefa(nome, index));
-      index++;
+      tarefas.add(Tarefa(nome));
     });
 
     controller.clear();
