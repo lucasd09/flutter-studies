@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'pages/home/home_page.dart';
-import 'pages/home/http/http_page.dart';
+import 'pages/home/clubs/clubs_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: '/',
-          page: () => HomePage(), children: [
+          page: () => const HomePage(), children: [
             GetPage(
-              name: '/http',
-              page: () => HttpPage()
+              name: '/clubs',
+              page: () => const ClubsPage()
             )
           ])
       ],

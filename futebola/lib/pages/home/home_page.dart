@@ -7,20 +7,29 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Futebola')),
+      appBar: AppBar(title: const Text('Futebola'), centerTitle: true,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextButton(onPressed: () => Get.toNamed('/http'),
-                     child: const Text('HTTP', style: TextStyle(fontSize: 20),)
+          TextButton(onPressed: () => Get.toNamed('/clubs'),
+                     child: const Text('Clubs', style: TextStyle(fontSize: 20),)
           ),
-          TextButton(onPressed: () {},
-                     child: const Text('DIO', style: TextStyle(fontSize: 20),)
+          TextButton(onPressed: () => Get.toNamed('/leagues'),
+                     child: const Text('Leagues', style: TextStyle(fontSize: 20),)
           ),
-          TextButton(onPressed: () {},
-                     child: const Text('GetConnect', style: TextStyle(fontSize: 20),)
+          TextButton(onPressed: () => Get.toNamed('/yourteam'),
+                     child: const Text('Your Team', style: TextStyle(fontSize: 20),)
           ),
           
+      ]),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.sports_soccer,),
+        ),
+        BottomNavigationBarItem(icon: Icon(Icons.sports_soccer,),
+        ),
+        BottomNavigationBarItem(icon: Icon(Icons.sports_soccer,),
+        ),
       ]),
     );
   }
